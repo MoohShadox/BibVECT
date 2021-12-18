@@ -1,0 +1,554 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="file:///home/moohshadox/PycharmProjects/BibVEC/bib.owl"
+         xmlns="file:///home/moohshadox/PycharmProjects/BibVEC/bib.owl#">
+
+<owl:Ontology rdf:about="file:///home/moohshadox/PycharmProjects/BibVEC/bib.owl"/>
+
+<owl:ObjectProperty rdf:about="#bibliographyContains">
+  <rdfs:domain rdf:resource="#Bibliography"/>
+  <rdfs:range rdf:resource="#Article"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#authored">
+  <rdfs:domain rdf:resource="#Researcher"/>
+  <rdfs:range rdf:resource="#Article"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#about">
+  <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <rdfs:range rdf:resource="#Article"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#publicatedIn">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#Article"/>
+  <rdfs:range rdf:resource="#Journal"/>
+</owl:ObjectProperty>
+
+<owl:DatatypeProperty rdf:about="#inFile">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#Article"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#articleID">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#Article"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#fullText">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#Article"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#content">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#doi">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#Article"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#found">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#Article"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#bibtexReference">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#Article"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#title">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#Article"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#author">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#Article"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#journal">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#Article"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#publicationYear">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#Article"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#bibliographyDate">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#Bibliography"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#articleReview">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#Article"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#hasDir">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#Article"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</owl:DatatypeProperty>
+
+<owl:Class rdf:about="#Bibliography">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Article">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Researcher">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Journal">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<Bibliography rdf:about="#bibliography1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <bibliographyContains rdf:resource="#article1"/>
+  <bibliographyContains rdf:resource="#article3"/>
+  <bibliographyContains rdf:resource="#article4"/>
+  <bibliographyContains rdf:resource="#article8"/>
+  <bibliographyContains rdf:resource="#article7"/>
+  <bibliographyContains rdf:resource="#article6"/>
+  <bibliographyContains rdf:resource="#article10"/>
+  <bibliographyContains rdf:resource="#article9"/>
+  <bibliographyContains rdf:resource="#article11"/>
+  <bibliographyContains rdf:resource="#article12"/>
+  <bibliographyContains rdf:resource="#article13"/>
+  <bibliographyContains rdf:resource="#article17"/>
+  <bibliographyContains rdf:resource="#article16"/>
+  <bibliographyContains rdf:resource="#article15"/>
+  <bibliographyContains rdf:resource="#article14"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">All</rdfs:label>
+  <bibliographyDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-12-06T14:36:08.637250</bibliographyDate>
+</Bibliography>
+
+<Article rdf:about="#article1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">articles/ReviewOnWrapperFeatureSelectionApproaches.pdf</inFile>
+  <articleID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ROWFSA</articleID>
+  <doi rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://doi.org/10.1109/ICEMIS.2016.7745366</doi>
+  <found rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</found>
+  <bibtexReference rdf:datatype="http://www.w3.org/2001/XMLSchema#string">@inproceedings{2016,
+	doi = {10.1109/icemis.2016.7745366},
+	url = {https://doi.org/10.1109%2Ficemis.2016.7745366},
+	year = 2016,
+	month = {sep},
+	publisher = {{IEEE}},
+	author = {Naoual El Aboudi and Laila Benhlima},
+	title = {Review on wrapper feature selection approaches}
+}</bibtexReference>
+  <title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Review on wrapper feature selection approaches</title>
+  <author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Naoual El Aboudi and Laila Benhlima</author>
+  <journal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{IEEE}</journal>
+  <publicationYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2016</publicationYear>
+  <hasDir rdf:datatype="http://www.w3.org/2001/XMLSchema#string">markdowns/ROWFSA</hasDir>
+</Article>
+
+<Article rdf:about="#article3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">articles/rankingsetsofobjects.pdf</inFile>
+  <articleID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Barberà2004</articleID>
+  <doi rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NOT AVAILABLE</doi>
+  <found rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</found>
+  <bibtexReference rdf:datatype="http://www.w3.org/2001/XMLSchema#string">@Inbook{Barberà2004,
+author="Barber{\`a}, Salvador
+and Bossert, Walter
+and Pattanaik, Prasanta K.",
+editor="Barber{\`a}, Salvador
+and Hammond, Peter J.
+and Seidl, Christian",
+title="Ranking Sets of Objects",
+bookTitle="Handbook of Utility Theory: Volume 2 Extensions",
+year="2004",
+publisher="Springer US",
+address="Boston, MA",
+pages="893--977",
+abstract="This chapter focuses on criteria and methods for ranking subsets of a set of objects. There are many situations in which rankings of individual objects suffice for classification or decision making purposes, but many other situations call for rankings that involve subsets of two or more objects. The chapter identifies contexts in which subset rankings are important and discusses a number of ways in which such rankings might be obtained.",
+isbn="978-1-4020-7964-1",
+doi="10.1007/978-1-4020-7964-1_4",
+url="https://doi.org/10.1007/978-1-4020-7964-1_4"
+}</bibtexReference>
+  <title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ranking Sets of Objects</title>
+  <author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Barber{\`a}, Salvador
+and Bossert, Walter
+and Pattanaik, Prasanta K.</author>
+  <journal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UNKNOWN</journal>
+  <publicationYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2004</publicationYear>
+  <hasDir rdf:datatype="http://www.w3.org/2001/XMLSchema#string">markdowns/Barberà2004</hasDir>
+</Article>
+
+<Article rdf:about="#article4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">articles/BOURDACHE_Nadjet_2020.pdf</inFile>
+  <articleID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bourdache:tel-03349211</articleID>
+  <doi rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NOT AVAILABLE</doi>
+  <found rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</found>
+  <bibtexReference rdf:datatype="http://www.w3.org/2001/XMLSchema#string">@phdthesis{bourdache:tel-03349211,
+  TITLE = {{{\'E}licitation incr{\'e}mentale des pr{\'e}f{\'e}rences pour l'optimisation multi-objectifs : mod{\`e}les non-lin{\'e}aires, domaines combinatoires et approches tol{\'e}rantes aux erreurs}},
+  AUTHOR = {Bourdache, Nadjet},
+  URL = {https://tel.archives-ouvertes.fr/tel-03349211},
+  NUMBER = {2020SORUS255},
+  SCHOOL = {{Sorbonne Universit{\'e}}},
+  YEAR = {2020},
+  MONTH = {Dec},
+  KEYWORDS = {Bayesian regression ; Multiobjective combinatorial optimization ; Incremental preference elicitation ; Algorithmic decision theory ; Optimisation combinatoire multi-objectifs ; {\'E}licitation incr{\'e}mentale des pr{\'e}f{\'e}rences ; Th{\'e}orie de la d{\'e}cision algorithmique ; R{\'e}gression Bay{\'e}sienne ; Aide {\`a} la d{\'e}cision multi-objectifs ; Intelligence artificielle},
+  TYPE = {Theses},
+  PDF = {https://tel.archives-ouvertes.fr/tel-03349211v2/file/BOURDACHE_Nadjet_2020.pdf},
+  HAL_ID = {tel-03349211},
+  HAL_VERSION = {v2},
+}</bibtexReference>
+  <title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{{\'E}licitation incr{\'e}mentale des pr{\'e}f{\'e}rences pour l'optimisation multi-objectifs : mod{\`e}les non-lin{\'e}aires, domaines combinatoires et approches tol{\'e}rantes aux erreurs}</title>
+  <author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bourdache, Nadjet</author>
+  <journal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UNKNOWN</journal>
+  <publicationYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2020</publicationYear>
+  <hasDir rdf:datatype="http://www.w3.org/2001/XMLSchema#string">markdowns/bourdache:tel-03349211</hasDir>
+</Article>
+
+<Article rdf:about="#article8">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">articles/287864847.pdf</inFile>
+  <articleID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mio2020power</articleID>
+  <doi rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NOT AVAILABLE</doi>
+  <found rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</found>
+  <bibtexReference rdf:datatype="http://www.w3.org/2001/XMLSchema#string">@article{mio2020power,
+  title={A POWER INDEX BASED FRAMEWORKFOR FEATURE SELECTION PROBLEMS},
+  author={Mio, Corrado},
+  year={2020},
+  publisher={Universit{\`a} degli Studi di Milano}
+}</bibtexReference>
+  <title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A POWER INDEX BASED FRAMEWORKFOR FEATURE SELECTION PROBLEMS</title>
+  <author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mio, Corrado</author>
+  <journal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UNKNOWN</journal>
+  <publicationYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2020</publicationYear>
+</Article>
+
+<Article rdf:about="#article7">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">articles/GeneratingFunctionsForComputingPowerIndicesEfficiently.pdf</inFile>
+  <articleID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GFFCPIE</articleID>
+  <doi rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://doi.org/10.1007/BF02628555</doi>
+  <found rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</found>
+  <bibtexReference rdf:datatype="http://www.w3.org/2001/XMLSchema#string">@article{2000,
+	doi = {10.1007/bf02628555},
+	url = {https://doi.org/10.1007%2Fbf02628555},
+	year = 2000,
+	month = {dec},
+	publisher = {Springer Science and Business Media {LLC}},
+	volume = {8},
+	number = {2},
+	pages = {191--213},
+	author = {J. M. Bilbao and J. R. Fern{\'{a}}ndez and A. Jim{\'{e}}nez Losada and J. J. L{\'{o}}pez},
+	title = {Generating functions for computing power indices efficiently}
+}</bibtexReference>
+  <title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Generating functions for computing power indices efficiently</title>
+  <author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">J. M. Bilbao and J. R. Fern{\'{a}}ndez and A. Jim{\'{e}}nez Losada and J. J. L{\'{o}}pez</author>
+  <journal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Springer Science and Business Media {LLC}</journal>
+  <publicationYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000</publicationYear>
+</Article>
+
+<Article rdf:about="#article6">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">articles/0054.pdf</inFile>
+  <articleID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">khani:hal-02302304</articleID>
+  <doi rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NOT AVAILABLE</doi>
+  <found rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</found>
+  <bibtexReference rdf:datatype="http://www.w3.org/2001/XMLSchema#string">@inproceedings{khani:hal-02302304, TITLE = {An Ordinal Banzhaf Index for Social Ranking}, AUTHOR = {Khani, Hossein and Moretti, Stefano and Ozturk, Meltem}, URL = {https://hal.archives-ouvertes.fr/hal-02302304}, BOOKTITLE = {28th International Joint Conference on Artificial Intelligence (IJCAI 2019)}, ADDRESS = {Macao, China}, SERIES = {28th International Joint Conference on Artificial Intelligence (IJCAI 2019)}, PAGES = {378-384}, YEAR = {2019}, MONTH = {Aug}, DOI = {10.24963/ijcai.2019/54}, KEYWORDS = {Agent-based and Multi-agent Systems ; Cooperative Games ; Social Choice ; Voting}, PDF = {https://hal.archives-ouvertes.fr/hal-02302304/file/ordinal_banzhaf.pdf}, HAL_ID = {hal-02302304}, HAL_VERSION = {v1}, }</bibtexReference>
+  <title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An Ordinal Banzhaf Index for Social Ranking</title>
+  <author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Khani, Hossein and Moretti, Stefano and Ozturk, Meltem</author>
+  <journal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UNKNOWN</journal>
+  <publicationYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2019</publicationYear>
+</Article>
+
+<Article rdf:about="#article10">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">articles/RobustFeatureSelectionTechniqueUsingRankAggregation.pdf</inFile>
+  <articleID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RFSTURA</articleID>
+  <doi rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10.1080/08839514.2014.883903</doi>
+  <found rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</found>
+  <bibtexReference rdf:datatype="http://www.w3.org/2001/XMLSchema#string">@article{2014,
+	doi = {10.1080/08839514.2014.883903},
+	url = {https://doi.org/10.1080%2F08839514.2014.883903},
+	year = 2014,
+	month = {mar},
+	publisher = {Informa {UK} Limited},
+	volume = {28},
+	number = {3},
+	pages = {243--257},
+	author = {Chandrima Sarkar and Sarah Cooley and Jaideep Srivastava},
+	title = {Robust Feature Selection Technique Using Rank Aggregation}
+}</bibtexReference>
+  <title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Robust Feature Selection Technique Using Rank Aggregation</title>
+  <author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chandrima Sarkar and Sarah Cooley and Jaideep Srivastava</author>
+  <journal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Informa {UK} Limited</journal>
+  <publicationYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2014</publicationYear>
+</Article>
+
+<Article rdf:about="#article9">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">articles/AnalysisOfFeatureRankingsForClassification.pdf</inFile>
+  <articleID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AOFRFC</articleID>
+  <doi rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10.1007/11552253_33</doi>
+  <found rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</found>
+  <bibtexReference rdf:datatype="http://www.w3.org/2001/XMLSchema#string">@incollection{2005,
+	doi = {10.1007/11552253_33},
+	url = {https://doi.org/10.1007%2F11552253_33},
+	year = 2005,
+	publisher = {Springer Berlin Heidelberg},
+	pages = {362--372},
+	author = {Roberto Ruiz and Jes{\'{u}}s S. Aguilar{\textendash}Ruiz and Jos{\'{e}} C. Riquelme and Norberto D{\'{\i}}az{\textendash}D{\'{\i}}az},
+	title = {Analysis of Feature Rankings for Classification}
+}</bibtexReference>
+  <title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Analysis of Feature Rankings for Classification</title>
+  <author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Roberto Ruiz and Jes{\'{u}}s S. Aguilar{\textendash}Ruiz and Jos{\'{e}} C. Riquelme and Norberto D{\'{\i}}az{\textendash}D{\'{\i}}az</author>
+  <journal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Springer Berlin Heidelberg</journal>
+  <publicationYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2005</publicationYear>
+</Article>
+
+<Article rdf:about="#article11">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">articles/Ensemble-BasedWrapperMethodsForFeatureSelectionAndClassImbalanceLearning.pdf</inFile>
+  <articleID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EBWMFFSACIL</articleID>
+  <doi rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10.1007/978-3-642-37453-1_45</doi>
+  <found rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</found>
+  <bibtexReference rdf:datatype="http://www.w3.org/2001/XMLSchema#string">@incollection{2013,
+	doi = {10.1007/978-3-642-37453-1_45},
+	url = {https://doi.org/10.1007%2F978-3-642-37453-1_45},
+	year = 2013,
+	publisher = {Springer Berlin Heidelberg},
+	pages = {544--555},
+	author = {Pengyi Yang and Wei Liu and Bing B. Zhou and Sanjay Chawla and Albert Y. Zomaya},
+	title = {Ensemble-Based Wrapper Methods for Feature Selection and Class Imbalance Learning}
+}</bibtexReference>
+  <title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ensemble-Based Wrapper Methods for Feature Selection and Class Imbalance Learning</title>
+  <author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pengyi Yang and Wei Liu and Bing B. Zhou and Sanjay Chawla and Albert Y. Zomaya</author>
+  <journal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Springer Berlin Heidelberg</journal>
+  <publicationYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2013</publicationYear>
+</Article>
+
+<Article rdf:about="#article12">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">articles/SpecificationIssuesInAGeneralisedRandomParametersAttributeNonattendanceModel.pdf</inFile>
+  <articleID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SIIAGRPANM</articleID>
+  <doi rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://doi.org/10.1016/j.trb.2013.08.001</doi>
+  <found rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</found>
+  <bibtexReference rdf:datatype="http://www.w3.org/2001/XMLSchema#string">@article{2013,
+	doi = {10.1016/j.trb.2013.08.001},
+	url = {https://doi.org/10.1016%2Fj.trb.2013.08.001},
+	year = 2013,
+	month = {oct},
+	publisher = {Elsevier {BV}},
+	volume = {56},
+	pages = {234--253},
+	author = {Andrew T. Collins and John M. Rose and David A. Hensher},
+	title = {Specification issues in a generalised random parameters attribute nonattendance model}
+}</bibtexReference>
+  <title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Specification issues in a generalised random parameters attribute nonattendance model</title>
+  <author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Andrew T. Collins and John M. Rose and David A. Hensher</author>
+  <journal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Elsevier {BV}</journal>
+  <publicationYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2013</publicationYear>
+</Article>
+
+<Article rdf:about="#article13">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">articles/fishburn1996.pdf</inFile>
+  <articleID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fishburn1996BinaryIA</articleID>
+  <doi rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NOT AVAILABLE</doi>
+  <found rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</found>
+  <bibtexReference rdf:datatype="http://www.w3.org/2001/XMLSchema#string">@article{Fishburn1996BinaryIA,
+  title={Binary interactions and subset choice},
+  author={Peter C. Fishburn and Irving H. Lavalle},
+  journal={European Journal of Operational Research},
+  year={1996},
+  volume={92},
+  pages={182-192}
+}</bibtexReference>
+  <title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Binary interactions and subset choice</title>
+  <author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peter C. Fishburn and Irving H. Lavalle</author>
+  <journal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">European Journal of Operational Research</journal>
+  <publicationYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1996</publicationYear>
+</Article>
+
+<Bibliography rdf:about="#bibliography2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <bibliographyContains rdf:resource="#article3"/>
+  <bibliographyContains rdf:resource="#article6"/>
+  <bibliographyContains rdf:resource="#article7"/>
+  <bibliographyContains rdf:resource="#article13"/>
+  <bibliographyContains rdf:resource="#article15"/>
+  <bibliographyContains rdf:resource="#article16"/>
+  <bibliographyContains rdf:resource="#article17"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ordinal Relations</rdfs:label>
+  <bibliographyDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-10-20T13:33:49.359856</bibliographyDate>
+</Bibliography>
+
+<Article rdf:about="#article15">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">articles/AAAI06-253.pdf</inFile>
+  <articleID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inproceedings</articleID>
+  <doi rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NOT AVAILABLE</doi>
+  <found rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</found>
+  <bibtexReference rdf:datatype="http://www.w3.org/2001/XMLSchema#string">@inproceedings{inproceedings,
+author = {Braziunas, Darius and Boutilier, Craig},
+year = {2006},
+month = {01},
+pages = {},
+title = {Preference Elicitation and Generalized Additive Utility.},
+volume = {2},
+journal = {Proceedings of the National Conference on Artificial Intelligence}
+}</bibtexReference>
+  <title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Preference Elicitation and Generalized Additive Utility.</title>
+  <author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Braziunas, Darius and Boutilier, Craig</author>
+  <journal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Proceedings of the National Conference on Artificial Intelligence</journal>
+  <publicationYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2006</publicationYear>
+</Article>
+
+<Article rdf:about="#article16">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">articles/paper4.pdf</inFile>
+  <articleID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">viappiani:hal-01212730</articleID>
+  <doi rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NOT AVAILABLE</doi>
+  <found rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</found>
+  <bibtexReference rdf:datatype="http://www.w3.org/2001/XMLSchema#string">@inproceedings{viappiani:hal-01212730,
+  TITLE = {{Preference Modeling and Preference Elicitation: An Overview.}},
+  AUTHOR = {Viappiani, Paolo},
+  URL = {https://hal.archives-ouvertes.fr/hal-01212730},
+  BOOKTITLE = {{The First International Workshop on Decision Making and Recommender Systems (DMRS2014)}},
+  ADDRESS = {Bolzano, Italy},
+  PUBLISHER = {{CEUR Workshop Proceedings}},
+  VOLUME = {1278},
+  PAGES = {19-24},
+  YEAR = {2014},
+  MONTH = {Sep},
+  HAL_ID = {hal-01212730},
+  HAL_VERSION = {v1},
+}</bibtexReference>
+  <title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{Preference Modeling and Preference Elicitation: An Overview.}</title>
+  <author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Viappiani, Paolo</author>
+  <journal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UNKNOWN</journal>
+  <publicationYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2014</publicationYear>
+</Article>
+
+<Article rdf:about="#article17">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">articles/SourcesOfComplexityInSubsetChoice.pdf</inFile>
+  <articleID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SOCISC</articleID>
+  <doi rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://doi.org/10.1016/j.jmp.2005.01.002</doi>
+  <found rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</found>
+  <bibtexReference rdf:datatype="http://www.w3.org/2001/XMLSchema#string">@article{van_Rooij_2005,
+	doi = {10.1016/j.jmp.2005.01.002},
+	url = {https://doi.org/10.1016%2Fj.jmp.2005.01.002},
+	year = 2005,
+	month = {apr},
+	publisher = {Elsevier {BV}},
+	volume = {49},
+	number = {2},
+	pages = {160--187},
+	author = {Iris van Rooij and Ulrike Stege and Helena Kadlec},
+	title = {Sources of complexity in subset choice},
+	journal = {Journal of Mathematical Psychology}
+}</bibtexReference>
+  <title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sources of complexity in subset choice</title>
+  <author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Iris van Rooij and Ulrike Stege and Helena Kadlec</author>
+  <journal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Journal of Mathematical Psychology</journal>
+  <publicationYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2005</publicationYear>
+</Article>
+
+<Bibliography rdf:about="#bibliography3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <bibliographyContains rdf:resource="#article1"/>
+  <bibliographyContains rdf:resource="#article8"/>
+  <bibliographyContains rdf:resource="#article9"/>
+  <bibliographyContains rdf:resource="#article10"/>
+  <bibliographyContains rdf:resource="#article11"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Feature Selection</rdfs:label>
+  <bibliographyDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-10-20T13:34:04.366316</bibliographyDate>
+</Bibliography>
+
+<Bibliography rdf:about="#bibliography4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <bibliographyContains rdf:resource="#article4"/>
+  <bibliographyContains rdf:resource="#article14"/>
+  <bibliographyContains rdf:resource="#article18"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Elicitation and Optimisation</rdfs:label>
+  <bibliographyDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-10-21T13:51:43.095280</bibliographyDate>
+</Bibliography>
+
+<Article rdf:about="#article14">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">articles/LearningValueFunctionsInInteractiveEvolutionaryMultiobjectiveOptimization.pdf</inFile>
+  <articleID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LVFIIEMO</articleID>
+  <doi rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://doi.org/10.1109/TEVC.2014.2303783</doi>
+  <found rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</found>
+  <bibtexReference rdf:datatype="http://www.w3.org/2001/XMLSchema#string">@article{2015,
+	doi = {10.1109/tevc.2014.2303783},
+	url = {https://doi.org/10.1109%2Ftevc.2014.2303783},
+	year = 2015,
+	month = {feb},
+	publisher = {Institute of Electrical and Electronics Engineers ({IEEE})},
+	volume = {19},
+	number = {1},
+	pages = {88--102},
+	author = {Jurgen Branke and Salvatore Greco and Roman Slowinski and Piotr Zielniewicz},
+	title = {Learning Value Functions in Interactive Evolutionary Multiobjective Optimization}
+}</bibtexReference>
+  <title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Learning Value Functions in Interactive Evolutionary Multiobjective Optimization</title>
+  <author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jurgen Branke and Salvatore Greco and Roman Slowinski and Piotr Zielniewicz</author>
+  <journal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Institute of Electrical and Electronics Engineers ({IEEE})</journal>
+  <publicationYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2015</publicationYear>
+</Article>
+
+<Article rdf:about="#article18">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">articles/Multiple-AttributeDecisionMakingWithPartialInformation:TheComparativeHypervolumeCriterion.pdf</inFile>
+  <articleID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MADMWPITCHC</articleID>
+  <doi rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://doi.org/10.1002/nav.3800250208</doi>
+  <found rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</found>
+  <bibtexReference rdf:datatype="http://www.w3.org/2001/XMLSchema#string">@article{Charnetski_1978,
+	doi = {10.1002/nav.3800250208},
+	url = {https://doi.org/10.1002%2Fnav.3800250208},
+	year = 1978,
+	month = {jun},
+	publisher = {Wiley},
+	volume = {25},
+	number = {2},
+	pages = {279--288},
+	author = {Johnnie R. Charnetski and Richard M. Soland},
+	title = {Multiple-attribute decision making with partial information: The comparative hypervolume criterion},
+	journal = {Naval Research Logistics Quarterly}
+}</bibtexReference>
+  <title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Multiple-attribute decision making with partial information: The comparative hypervolume criterion</title>
+  <author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Johnnie R. Charnetski and Richard M. Soland</author>
+  <journal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Naval Research Logistics Quarterly</journal>
+  <publicationYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1978</publicationYear>
+</Article>
+
+
+</rdf:RDF>

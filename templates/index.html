@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="container">
+        <div class="text-center mt-5">
+            <!--<p class="lead">The different bibliographies built</p> -->
+            <table class="table mt-3 mb-3">
+                <thead class="thead-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Name</th>
+                    <th scope="col"> N° of articles</th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for bib in bibliographies %}
+                    <tr>
+                        <th scope="row">{{ loop.index  }}</th>
+                        <td>{{ bib.date }}</td>
+                        <td>{{ bib.name }}</td>
+                        <td>{{ bib.n }}</td>
+                        <td>
+                            <a href="/browse/{{ bib.name }}">
+                                <button type="button" class="btn btn-primary">Browse</button>
+                            </a>
+                        </td>
+                        <td>
+                            <a target="_blank" href="/dl_bib/{{ bib.name }}">
+                                <i class="bi bi-arrow-down-circle" style="font-size: 1.4em"></i>
+                            </a>
+                        </td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+                <form class="input-group mb-3" action="/new_bib" method="POST">
+                    <input id="name" name="name" type="text" class="form-control" placeholder="Bibliography name" aria-label="Bibliography name" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-success" type="submit">Add</button>
+                    </div>
+                </form>
+        </div>
+    </div>
+{% endblock %}

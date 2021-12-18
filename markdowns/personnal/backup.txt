@@ -1,0 +1,17 @@
+Suppose that the order $\succ$ si a weak order, $\succ$ is then asymetric which means that $A \succ B \rightarrow \neg (B \succ A)$ and negtively transitive which means that $\neg (A \succ B) \and \neg (B \succ C) \rightarrow \neg (A \succ C)$.
+
+The union of different cardinal models does'nt preserve this weak order, for exemple suppose for a fixed $\theta$ two $\theta$-additive cardinal models caracterised by their respective utility vector $U^1, U^2$ where $U¹, U² \in U_{R}^{\theta}$.
+
+The cardinal model charecterized by $U_1$ is defined by :
+$$
+A \succ_1 B \iff  \sum_{S \in \theta} x_S^A u^1_{S} > \sum_{S \in \theta} x_S^B u¹_{S}
+$$
+The cardinal model charecterized by $U_2$ is defined by :
+$$
+A \succ_2 B \iff  \sum_{S \in \theta} x_S^A u^2_{S} > \sum_{S \in \theta} x_S^B u²_{S}
+$$
+But if we make the union of the induced preferences of the two models by defining $A \succ' B \iff (A \succ B) \or (A \succ_1 B) \or (A \succ_2 B)$ then $\succ'$ may loose some of the weak order's properties, for instance we could have $A \succ_1 B$ and $B \succ_2 A$ and thus loose the asymetry of $\succ$.
+
+This property loss is no longer a problem for the ordinal models, even if they are defined with different $\theta$ as long as they belong to $\Theta_R$.
+
+In the following we will note $\succeq^i$ by the ordinal relation defined by derivng the cardinal $\theta$-additive model.

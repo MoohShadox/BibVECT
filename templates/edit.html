@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+    <form class=" mb-3" action="/save_review/{{ id }}" method="POST" >
+    <div class="container">
+
+        <div class="text-left m-5 " >
+            <div class="col form-group shadow-textarea">
+                    <textarea name="content" id="review" class="form-control z-depth-1" rows="3" placeholder="Review content"> {{ content }}</textarea>
+            </div>
+        </div>
+
+        <div class="text-center m-5 align-content-between">
+            <div class="col">
+                <button type="submit" id="render-button" class="btn-success btn">Save</button>
+            </div>
+        </div>
+    </div>
+    </form>
+{% endblock %}

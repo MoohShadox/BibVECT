@@ -1,0 +1,101 @@
+@inproceedings{2016,
+	doi = {10.1109/icemis.2016.7745366},
+	url = {https://doi.org/10.1109%2Ficemis.2016.7745366},
+	year = 2016,
+	month = {sep},
+	publisher = {{IEEE}},
+	author = {Naoual El Aboudi and Laila Benhlima},
+	title = {Review on wrapper feature selection approaches}
+}
+@Inbook{Barberà2004,
+author="Barber{\`a}, Salvador
+and Bossert, Walter
+and Pattanaik, Prasanta K.",
+editor="Barber{\`a}, Salvador
+and Hammond, Peter J.
+and Seidl, Christian",
+title="Ranking Sets of Objects",
+bookTitle="Handbook of Utility Theory: Volume 2 Extensions",
+year="2004",
+publisher="Springer US",
+address="Boston, MA",
+pages="893--977",
+abstract="This chapter focuses on criteria and methods for ranking subsets of a set of objects. There are many situations in which rankings of individual objects suffice for classification or decision making purposes, but many other situations call for rankings that involve subsets of two or more objects. The chapter identifies contexts in which subset rankings are important and discusses a number of ways in which such rankings might be obtained.",
+isbn="978-1-4020-7964-1",
+doi="10.1007/978-1-4020-7964-1_4",
+url="https://doi.org/10.1007/978-1-4020-7964-1_4"
+}
+@phdthesis{bourdache:tel-03349211,
+  TITLE = {{{\'E}licitation incr{\'e}mentale des pr{\'e}f{\'e}rences pour l'optimisation multi-objectifs : mod{\`e}les non-lin{\'e}aires, domaines combinatoires et approches tol{\'e}rantes aux erreurs}},
+  AUTHOR = {Bourdache, Nadjet},
+  URL = {https://tel.archives-ouvertes.fr/tel-03349211},
+  NUMBER = {2020SORUS255},
+  SCHOOL = {{Sorbonne Universit{\'e}}},
+  YEAR = {2020},
+  MONTH = {Dec},
+  KEYWORDS = {Bayesian regression ; Multiobjective combinatorial optimization ; Incremental preference elicitation ; Algorithmic decision theory ; Optimisation combinatoire multi-objectifs ; {\'E}licitation incr{\'e}mentale des pr{\'e}f{\'e}rences ; Th{\'e}orie de la d{\'e}cision algorithmique ; R{\'e}gression Bay{\'e}sienne ; Aide {\`a} la d{\'e}cision multi-objectifs ; Intelligence artificielle},
+  TYPE = {Theses},
+  PDF = {https://tel.archives-ouvertes.fr/tel-03349211v2/file/BOURDACHE_Nadjet_2020.pdf},
+  HAL_ID = {tel-03349211},
+  HAL_VERSION = {v2},
+}
+@article{mio2020power,
+  title={A POWER INDEX BASED FRAMEWORKFOR FEATURE SELECTION PROBLEMS},
+  author={Mio, Corrado},
+  year={2020},
+  publisher={Universit{\`a} degli Studi di Milano}
+}
+@article{2000,
+	doi = {10.1007/bf02628555},
+	url = {https://doi.org/10.1007%2Fbf02628555},
+	year = 2000,
+	month = {dec},
+	publisher = {Springer Science and Business Media {LLC}},
+	volume = {8},
+	number = {2},
+	pages = {191--213},
+	author = {J. M. Bilbao and J. R. Fern{\'{a}}ndez and A. Jim{\'{e}}nez Losada and J. J. L{\'{o}}pez},
+	title = {Generating functions for computing power indices efficiently}
+}
+@inproceedings{khani:hal-02302304, TITLE = {An Ordinal Banzhaf Index for Social Ranking}, AUTHOR = {Khani, Hossein and Moretti, Stefano and Ozturk, Meltem}, URL = {https://hal.archives-ouvertes.fr/hal-02302304}, BOOKTITLE = {28th International Joint Conference on Artificial Intelligence (IJCAI 2019)}, ADDRESS = {Macao, China}, SERIES = {28th International Joint Conference on Artificial Intelligence (IJCAI 2019)}, PAGES = {378-384}, YEAR = {2019}, MONTH = {Aug}, DOI = {10.24963/ijcai.2019/54}, KEYWORDS = {Agent-based and Multi-agent Systems ; Cooperative Games ; Social Choice ; Voting}, PDF = {https://hal.archives-ouvertes.fr/hal-02302304/file/ordinal_banzhaf.pdf}, HAL_ID = {hal-02302304}, HAL_VERSION = {v1}, }
+@incollection{2005,
+	doi = {10.1007/11552253_33},
+	url = {https://doi.org/10.1007%2F11552253_33},
+	year = 2005,
+	publisher = {Springer Berlin Heidelberg},
+	pages = {362--372},
+	author = {Roberto Ruiz and Jes{\'{u}}s S. Aguilar{\textendash}Ruiz and Jos{\'{e}} C. Riquelme and Norberto D{\'{\i}}az{\textendash}D{\'{\i}}az},
+	title = {Analysis of Feature Rankings for Classification}
+}
+@article{2014,
+	doi = {10.1080/08839514.2014.883903},
+	url = {https://doi.org/10.1080%2F08839514.2014.883903},
+	year = 2014,
+	month = {mar},
+	publisher = {Informa {UK} Limited},
+	volume = {28},
+	number = {3},
+	pages = {243--257},
+	author = {Chandrima Sarkar and Sarah Cooley and Jaideep Srivastava},
+	title = {Robust Feature Selection Technique Using Rank Aggregation}
+}
+@incollection{2013,
+	doi = {10.1007/978-3-642-37453-1_45},
+	url = {https://doi.org/10.1007%2F978-3-642-37453-1_45},
+	year = 2013,
+	publisher = {Springer Berlin Heidelberg},
+	pages = {544--555},
+	author = {Pengyi Yang and Wei Liu and Bing B. Zhou and Sanjay Chawla and Albert Y. Zomaya},
+	title = {Ensemble-Based Wrapper Methods for Feature Selection and Class Imbalance Learning}
+}
+@article{2013,
+	doi = {10.1016/j.trb.2013.08.001},
+	url = {https://doi.org/10.1016%2Fj.trb.2013.08.001},
+	year = 2013,
+	month = {oct},
+	publisher = {Elsevier {BV}},
+	volume = {56},
+	pages = {234--253},
+	author = {Andrew T. Collins and John M. Rose and David A. Hensher},
+	title = {Specification issues in a generalised random parameters attribute nonattendance model}
+}

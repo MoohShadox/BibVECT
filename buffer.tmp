@@ -1,0 +1,36 @@
+@article{Campbell_2014,
+	doi = {10.1016/j.jocm.2014.02.004},
+	url = {https://doi.org/10.1016%2Fj.jocm.2014.02.004},
+	year = 2014,
+	month = {jun},
+	publisher = {Elsevier {BV}},
+	volume = {11},
+	pages = {4--15},
+	author = {Danny Campbell and David A. Hensher and Riccardo Scarpa},
+	title = {Bounding {WTP} distributions to reflect the `actual' consideration set},
+	journal = {Journal of Choice Modelling}
+}
+@article{Leong_2014,
+	doi = {10.1016/j.jocm.2014.05.002},
+	url = {https://doi.org/10.1016%2Fj.jocm.2014.05.002},
+	year = 2014,
+	month = {jun},
+	publisher = {Elsevier {BV}},
+	volume = {11},
+	pages = {30--42},
+	author = {Waiyan Leong and David A. Hensher},
+	title = {Relative advantage maximisation as a model of context dependence for binary choice data},
+	journal = {Journal of Choice Modelling}
+}
+@article{Kravchenko_2014,
+	doi = {10.1016/j.jocm.2014.02.002},
+	url = {https://doi.org/10.1016%2Fj.jocm.2014.02.002},
+	year = 2014,
+	month = {jun},
+	publisher = {Elsevier {BV}},
+	volume = {11},
+	pages = {57--68},
+	author = {Alex Kravchenko},
+	title = {Influence of rudimentary attribute non-attendance ({ANA}) on choice experiment parameter estimates and design efficiency: A Monte Carlo Simulation analysis},
+	journal = {Journal of Choice Modelling}
+}

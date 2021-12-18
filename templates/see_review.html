@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+    <div class="container mt-5">
+        {% if not review %}
+            <p>
+                No review found, but you can create one.
+            </p>
+            <a href="/edit_review/{{ id }}">
+                <button id="row render-button" class="btn-success btn">Create review</button>
+            </a>
+        {% else %}
+            <p id="reviewP">{{ review }}</p>
+            <div class="row text-center m-5">
+                <a href="/edit_review/{{ id }}">
+                    <button id="col-2 render-button" class="btn-primary btn">Modify</button>
+                </a>
+            </div>
+        {% endif %}
+    </div>
+{% endblock %}
